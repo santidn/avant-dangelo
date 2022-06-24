@@ -437,15 +437,17 @@ footer {
 
     .galeria div {
         padding-top: 0;
+        width: 100%;
     }
 
     .galeria div img {
         width: 100%;
     }
 
-    .galeria div {
-        width: 100%;
+    .galeria div img:hover {
+        transform: scale(1.01);
     }
+
 }
 
 /* ---- Servicios2---- */
