@@ -1,0 +1,703 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- GENERALES --- */
+
+body {
+    background: url(../img/bg-body4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+h1 {
+    font-weight: 800;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+li,
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+video {
+    width: 100%;
+}
+
+
+/* ---- HEADER ---- */
+
+header {
+    background-color: #0091cad7;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+header nav ul li {
+    padding: 5px;
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        font-size: 1.1rem;
+    }
+
+    header nav ul li {
+        padding: 10px;
+    }
+}
+
+
+@media (min-width:1200px) {
+    header {
+        padding: 40px;
+        font-size: 1.2rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header nav ul li {
+        padding: 5px;
+    }
+}
+
+/* ----FOOTER---- */
+
+footer {
+    width: 100%;
+    background-color: #393e46d7;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.footer-contacto {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contacto h3, a {
+    padding: 5px;
+}
+
+
+.footer-nav {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-nav ul li {
+    padding: 10px;
+}
+
+.footer-redes {
+    padding: 10px;
+}
+
+.footer-redes ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-redes ul li {
+    padding: 10px;
+}
+
+.footer-redes ul li a img {
+    width: 20px;
+}
+
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .footer-contacto {
+        text-align: left;
+    }
+
+    .footer-contacto h3 {
+        text-align: left;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+    }
+
+    .footer-nav ul li {
+        padding: 2.5px;
+    }
+
+    .footer-redes ul li a img {
+        width: 25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .footer-redes ul li a img {
+        width: 30px;
+    }
+
+}
+
+/* ----MAIN-INDEX---- */
+
+.sobre-nosotros {
+    color: white;
+    background-color: #0091ca96;
+    width: 100%;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.sobre-nosotros h2 {
+    font-size: 1.5rem;
+}
+
+.sobre-nosotros p {
+    text-align: center;
+    padding: 20px;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.servicios h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.servicios h3 {
+    padding: 15px;
+}
+
+.servicios-topografia,
+.servicios-agricultura,
+.servicios-inspecciones,
+.servicios-seguimiento,
+.servicios-audiovisual {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0091ca96;
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.servicios-topografia div,
+.servicios-agricultura div,
+.servicios-inspecciones div,
+.servicios-seguimiento div,
+.servicios-audiovisual div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios-topografia div img,
+.servicios-agricultura div img,
+.servicios-inspecciones div img,
+.servicios-seguimiento div img,
+.servicios-audiovisual div img {
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.servicios-topografia div p,
+.servicios-agricultura div p,
+.servicios-inspecciones div p,
+.servicios-seguimiento div p,
+.servicios-audiovisual div p {
+    text-align: justify;
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+
+    .servicios-topografia,
+    .servicios-agricultura,
+    .servicios-inspecciones,
+    .servicios-seguimiento,
+    .servicios-audiovisual {
+        width: 70%;
+    }
+
+    .sobre-nosotros h2 {
+        font-size: 2rem;
+    }
+
+    .servicios h2 {
+        font-size: 1.7rem;
+    }
+
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "titulo titulo"
+            "topografia ."
+            ". agricultura"
+            "inspecciones ."
+            ". seguimiento"
+            "audiovisual .";
+        justify-items: center;
+    }
+
+    .servicios h2 {
+        grid-area: titulo;
+    }
+
+    .servicios-topografia {
+        grid-area: topografia;
+    }
+
+    .servicios-agricultura {
+        grid-area: agricultura;
+    }
+
+    .servicios-inspecciones {
+        grid-area: inspecciones;
+    }
+
+    .servicios-seguimiento {
+        grid-area: seguimiento;
+    }
+
+    .servicios-audiovisual {
+        grid-area: audiovisual;
+    }
+
+}
+
+/* --- slider --- */
+
+.contenedor-empresas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    color: white;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.contenedor-empresas h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.contenedor-empresas .slider {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    background-color: #0091ca96;
+    margin-top: 10px;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+}
+
+.contenedor-empresas .slider img {
+    width: 100px;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .contenedor-empresas h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contenedor-empresas h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1366px) {
+    .contenedor-empresas .slider {
+        justify-content: space-between;
+    }
+}
+
+
+/* ----galeria---- */
+
+.header-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 15px;
+    background-color: #393e46a9;
+}
+
+.contenedor-galeria {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.galeria div {
+    width: 90%;
+    padding-top: 10px;
+}
+
+.galeria div img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .header-galeria h2{
+        font-size: 2.1rem;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 10px;
+    }
+
+    .galeria div {
+        padding-top: 0;
+    }
+
+    .galeria div img {
+        width: 100%;
+    }
+
+    .galeria div {
+        width: 100%;
+    }
+}
+
+/* ---- Servicios2---- */
+
+.servicios2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.servicios-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    background-color: #393e46a9;
+    width: 90%;
+}
+
+.servicios2 h2 {
+    font-size: 1.7rem;
+    color: white;
+}
+
+.servicios2 h3 {
+    padding: 15px;
+}
+
+.servicios2-topografia,
+.servicios2-agricultura,
+.servicios2-inspecciones,
+.servicios2-seguimiento,
+.servicios2-audiovisual {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color: #393e46a9;
+}
+
+.servicios2-topografia div,
+.servicios2-agricultura div,
+.servicios2-inspecciones div,
+.servicios2-seguimiento div,
+.servicios2-audiovisual div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios2-topografia img,
+.servicios2-agricultura img,
+.servicios2-inspecciones img,
+.servicios2-seguimiento img,
+.servicios2-audiovisual img {
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.servicios2-topografia div p,
+.servicios2-agricultura div p,
+.servicios2-inspecciones div p,
+.servicios2-seguimiento div p,
+.servicios2-audiovisual div p {
+    text-align: justify;
+    width: 80%;
+}
+
+@media (min-width:768px) {
+
+    .servicios2-topografia,
+    .servicios2-inspecciones,
+    .servicios2-audiovisual {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .servicios2-agricultura,
+    .servicios2-seguimiento {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+    .servicios2-topografia img,
+    .servicios2-agricultura img,
+    .servicios2-inspecciones img,
+    .servicios2-seguimiento img,
+    .servicios2-audiovisual img {
+        width: 50%;
+    }
+}
+
+@media (min-width:1050px) {
+    .servicios2 h2 {
+        font-size: 2.2rem;
+    }
+
+    .servicios2 div h3 {
+        font-size: 1.6rem;
+    }
+
+    .servicios2 div p {
+        font-size: 1.1rem;
+    }
+}
+
+/* ---- Equipos ---- */
+
+.equipos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.equipos-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    background-color: #393e46a9;
+    width: 90%;
+}
+.equipos-header h2{
+    font-size: 1.5rem;
+}
+
+.equipos h3 {
+    padding: 15px;
+}
+
+.equipos-matrice,
+.equipos-inspire,
+.equipos-phantom,
+.equipos-matrice-rtk,
+.equipos-mavic {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color: #393e46a9;
+}
+
+.equipos-matrice div,
+.equipos-inspire div,
+.equipos-phantom div,
+.equipos-matrice-rtk div,
+.equipos-mavic div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipos-matrice img,
+.equipos-inspire img,
+.equipos-phantom img,
+.equipos-matrice-rtk img,
+.equipos-mavic img {
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.equipos-matrice div p,
+.equipos-inspire div p,
+.equipos-phantom div p,
+.equipos-matrice-rtk div p,
+.equipos-mavic div p {
+    text-align: justify;
+    width: 80%;
+}
+
+@media (min-width:768px) {
+
+    .equipos-matrice,
+    .equipos-phantom,
+    .equipos-mavic {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .equipos-inspire,
+    .equipos-matrice-rtk {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+    .equipos-matrice img,
+    .equipos-inspire img,
+    .equipos-phantom img,
+    .equipos-matrice-rtk img,
+    .equipos-mavic img {
+        width: 50%;
+    }
+}
+
+@media (min-width:1050px) {
+    .equipos h2 {
+        font-size: 2.2rem;
+    }
+
+    .equipos div h3 {
+        font-size: 1.6rem;
+    }
+
+    .equipos div p {
+        font-size: 1.1rem;
+    }
+}
+
+/* ---- CONTACTO ---- */
+
+.header-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 15px;
+    background-color: #393e46a9;
+}
+
+.form {
+    background-color: #393e46a9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin: auto;
+    color: white;
+}
+
+.form1 {
+    padding: 15px;
+}
