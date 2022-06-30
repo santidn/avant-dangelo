@@ -12,10 +12,45 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color: white;
+}
+
+main {
+    background-color: #53ceff49;
+}
+footer {
+    background-color: #393e4665;
+    }
+
+ul {
+    list-style-type: none;
+}
+
+li, a{
+    text-decoration: none;
+    color: white;
+}
+
+#galeria div img:hover {
+    transform: scale(1.01);
 }
 
 
-h1 {
+/* DEJE COMENTADOS TODOS LOS ESTILOS PARA TENER COMO GUÍA */
+
+/* li,
+a {
+    text-decoration: none;
+    color: white;
+} */
+
+/* ---- header ---- */
+
+/* header{
+    background-color: #0091cad7;
+} */
+
+/* h1 {
     font-weight: 800;
 }
 
@@ -32,16 +67,16 @@ a {
 
 ul {
     list-style-type: none;
-}
+} */
 
-video {
+/* video {
     width: 100%;
-}
+} */
 
 
 /* ---- HEADER ---- */
 
-header {
+/* header {
     background-color: #0091cad7;
     color: white;
     padding: 15px;
@@ -76,7 +111,8 @@ header nav ul li {
     header nav ul li {
         padding: 10px;
     }
-    header nav ul li:hover{
+
+    header nav ul li:hover {
         background-color: #393e46d7;
     }
 }
@@ -95,11 +131,11 @@ header nav ul li {
     header nav ul li {
         padding: 5px;
     }
-}
+} */
 
 /* ----FOOTER---- */
 
-footer {
+/* footer {
     width: 100%;
     background-color: #393e46d7;
     color: white;
@@ -118,7 +154,8 @@ footer {
     flex-direction: column;
 }
 
-.footer-contacto h3, a {
+.footer-contacto h3,
+a {
     padding: 5px;
 }
 
@@ -195,11 +232,11 @@ footer {
         width: 30px;
     }
 
-}
+} */
 
 /* ----MAIN-INDEX---- */
 
-.sobre-nosotros {
+/* .sobre-nosotros {
     color: white;
     background-color: #0091ca96;
     width: 100%;
@@ -336,11 +373,11 @@ footer {
         grid-area: audiovisual;
     }
 
-}
+} */
 
 /* --- slider --- */
 
-.contenedor-empresas {
+/* .contenedor-empresas {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -389,12 +426,12 @@ footer {
     .contenedor-empresas .slider {
         justify-content: space-between;
     }
-}
+} */
 
 
 /* ----galeria---- */
 
-.header-galeria {
+/* .header-galeria {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -427,7 +464,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .header-galeria h2{
+    .header-galeria h2 {
         font-size: 2.1rem;
     }
 
@@ -451,11 +488,11 @@ footer {
         transform: scale(1.01);
     }
 
-}
+} */
 
 /* ---- Servicios2---- */
 
-.servicios2 {
+/* .servicios2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -464,7 +501,7 @@ footer {
     margin: auto;
 }
 
-.servicios-header{
+.servicios-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -543,8 +580,6 @@ footer {
         justify-content: space-between;
     }
 
-
-
     .servicios2-topografia img,
     .servicios2-agricultura img,
     .servicios2-inspecciones img,
@@ -566,11 +601,11 @@ footer {
     .servicios2 div p {
         font-size: 1.1rem;
     }
-}
+} */
 
 /* ---- Equipos ---- */
 
-.equipos {
+/* .equipos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -588,7 +623,8 @@ footer {
     background-color: #393e46a9;
     width: 90%;
 }
-.equipos-header h2{
+
+.equipos-header h2 {
     font-size: 1.5rem;
 }
 
@@ -656,8 +692,6 @@ footer {
         justify-content: space-between;
     }
 
-
-
     .equipos-matrice img,
     .equipos-inspire img,
     .equipos-phantom img,
@@ -671,35 +705,41 @@ footer {
     .equipos h2 {
         font-size: 2.2rem;
     }
+
     .equipos div h3 {
         font-size: 1.6rem;
     }
+
     .equipos div p {
         font-size: 1.1rem;
     }
-    .equipos-matrice img{
+
+    .equipos-matrice img {
         width: 30%;
     }
-    .equipos-phantom img{
+
+    .equipos-phantom img {
         width: 35%;
     }
-    .equipos-matrice-rtk img{
+
+    .equipos-matrice-rtk img {
         width: 50%;
         padding: 50px;
     }
+
     .equipos-matrice:hover,
     .equipos-inspire:hover,
     .equipos-phantom:hover,
     .equipos-matrice-rtk:hover,
     .equipos-mavic:hover {
-    transform: scale(1.01)
+        transform: scale(1.01)
     }
 
-}
+} */
 
 /* ---- CONTACTO ---- */
 
-.header-contacto {
+/* .header-contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -721,4 +761,4 @@ footer {
 
 .form1 {
     padding: 15px;
-}
+} */
