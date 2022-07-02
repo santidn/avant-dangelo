@@ -1,10 +1,10 @@
 
-.contenedor-galeria {
+.contenedor-galeria{
     display: flex;
     flex-direction: column;
     align-content: center;
     padding: 10px;
-    .header-galeria {
+    .header-galeria{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -15,7 +15,7 @@
             color: $color-principal;
         }
     }
-    .galeria {
+    .galeria{
         display: flex;
         flex-direction: column;
         align-content: center;
