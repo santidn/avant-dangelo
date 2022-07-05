@@ -18,6 +18,11 @@ body {
 main {
     background-color: #53ceff49;
 }
+
+header nav ul li:hover {
+    background-color: rgb(57, 62, 70);
+    }
+
 footer {
     background-color: #393e4665;
     }
@@ -32,7 +37,8 @@ li, a{
 }
 
 #galeria div img:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
+    transition: transform 200ms ease-in;
 }
 
 
