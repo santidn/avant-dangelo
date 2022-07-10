@@ -1,57 +1,58 @@
-
-.contenedor-galeria{
-    display: flex;
+.contenedor-galeria {
+    @include flexCenter;
     flex-direction: column;
-    align-content: center;
     padding: 10px;
-    .header-galeria{
-        display: flex;
+
+    .header-galeria {
+        @include flexCenter;
         flex-direction: column;
-        align-items: center;
+        text-align: center;
         color: white;
         padding: 15px;
-        background-color: #393e46a9;
-        h2{
+        background-color: $color-secundario;
+
+        h2 {
             color: $color-principal;
-        }
-    }
-    .galeria{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-        div {
-            width: 90%;
-            padding-top: 10px;
-            img {
-                width: 100%;
+
+            @include tablet {
+                font-size: 2.1rem;
             }
         }
     }
-}
 
-@media (min-width: 768px) {
-    .header-galeria h2{
-        font-size: 2.1rem;
-    }
-.contenedor-galeria{
-    .galeria{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        gap: 0px 10px;
+    .galeria {
+        @include flexCenter;
+        flex-direction: column;
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            gap: 0px 10px;
+        }
+
         div {
-            padding-top: 0;
             width: 100%;
+            padding-top: 10px;
+
+            @include tablet {
+                padding-top: 0;
+                width: 100%;
+            }
+
             img {
                 width: 100%;
                 border-radius: 15px;
-                &:hover{
-                    transform: scale(1.01);
+
+                @include tablet {
+                    width: 100%;
+                    border-radius: 15px;
+
+                    &:hover {
+                        transform: scale(1.01);
+                    }
                 }
             }
         }
     }
-}
-
 }

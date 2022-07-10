@@ -35,7 +35,7 @@ video {
 }
 
 header {
-  background-color: rgba(0, 145, 202, 0.8431372549);
+  background-color: #0091ca;
   color: white;
   padding: 15px;
   display: flex;
@@ -86,7 +86,7 @@ header nav ul li {
 }
 footer {
   width: 100%;
-  background-color: rgba(57, 62, 70, 0.8431372549);
+  background-color: #393e46;
   color: white;
   padding: 15px;
   display: flex;
@@ -569,49 +569,58 @@ footer {
 }
 .contenedor-galeria {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  align-content: center;
   padding: 10px;
 }
 .contenedor-galeria .header-galeria {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
   color: white;
   padding: 15px;
-  background-color: rgba(57, 62, 70, 0.662745098);
+  background-color: #393e46;
 }
 .contenedor-galeria .header-galeria h2 {
   color: #0091ca;
 }
-.contenedor-galeria .galeria {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-}
-.contenedor-galeria .galeria div {
-  width: 90%;
-  padding-top: 10px;
-}
-.contenedor-galeria .galeria div img {
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .header-galeria h2 {
+@media screen and (min-width: 650px) {
+  .contenedor-galeria .header-galeria h2 {
     font-size: 2.1rem;
   }
+}
+.contenedor-galeria .galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 650px) {
   .contenedor-galeria .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 10px;
   }
+}
+.contenedor-galeria .galeria div {
+  width: 100%;
+  padding-top: 10px;
+}
+@media screen and (min-width: 650px) {
   .contenedor-galeria .galeria div {
     padding-top: 0;
     width: 100%;
   }
+}
+.contenedor-galeria .galeria div img {
+  width: 100%;
+  border-radius: 15px;
+}
+@media screen and (min-width: 650px) {
   .contenedor-galeria .galeria div img {
     width: 100%;
     border-radius: 15px;
@@ -620,6 +629,7 @@ footer {
     transform: scale(1.01);
   }
 }
+
 .header-contacto {
   display: flex;
   flex-direction: column;
