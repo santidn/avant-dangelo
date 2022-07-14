@@ -1,128 +1,226 @@
 .equipos {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     padding: 15px;
     margin-top: 20px;
     margin: auto;
-}
 
-.equipos-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    color: white;
-    background-color: #393e46a9;
-    width: 90%;
-}
-.equipos-header h2{
-    font-size: 1.5rem;
-    color: $color-principal;
-}
+    .equipos-header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        color: white;
+        width: 90%;
 
-.equipos h3 {
-    padding: 15px;
-    color: $color-principal;
-}
+        h2 {
+            font-size: 1.5rem;
+            color: $color-principal;
+            font-weight: 700;
 
-.equipos-matrice,
-.equipos-inspire,
-.equipos-phantom,
-.equipos-matrice-rtk,
-.equipos-mavic {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    background-color: #393e46a9;
-}
-
-.equipos-matrice div,
-.equipos-inspire div,
-.equipos-phantom div,
-.equipos-matrice-rtk div,
-.equipos-mavic div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.equipos-matrice img,
-.equipos-inspire img,
-.equipos-phantom img,
-.equipos-matrice-rtk img,
-.equipos-mavic img {
-    width: 90%;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.equipos-matrice div p,
-.equipos-inspire div p,
-.equipos-phantom div p,
-.equipos-matrice-rtk div p,
-.equipos-mavic div p {
-    text-align: justify;
-    width: 80%;
-}
-
-@media (min-width:768px) {
-
-    .equipos-matrice,
-    .equipos-phantom,
-    .equipos-mavic {
-        flex-direction: row-reverse;
-        justify-content: space-between;
+            @include desktop {
+                font-size: 3rem;
+            }
+        }
     }
 
-    .equipos-inspire,
+    .equipos-matrice {
+        @include tarjeta-equipos;
+
+        img {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+
+            @include tablet {
+                width: 50%;
+            }
+
+            @include desktop {
+                width: 30%;
+            }
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+
+            p {
+                text-align: justify;
+                width: 80%;
+
+                @include desktop {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        @include tablet {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+
+    .equipos-inspire {
+        @include tarjeta-equipos;
+
+        img {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+
+            @include tablet {
+                width: 50%;
+            }
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+
+            p {
+                text-align: justify;
+                width: 80%;
+
+                @include desktop {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .equipos-phantom {
+        @include tarjeta-equipos;
+
+        img {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+
+            @include tablet {
+                width: 50%;
+            }
+
+            @include desktop {
+                width: 35%;
+            }
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+
+            p {
+                text-align: justify;
+                width: 80%;
+
+                @include desktop {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        @include tablet {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+
     .equipos-matrice-rtk {
-        flex-direction: row;
-        justify-content: space-between;
+        @include tarjeta-equipos;
+
+        img {
+            width: 50%;
+            padding: 10px;
+            border-radius: 20px;
+
+            @include tablet {
+                width: 50%;
+            }
+
+            @include desktop {
+                width: 50%;
+                padding: 50px;
+            }
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+
+            p {
+                text-align: justify;
+                width: 80%;
+
+                @include desktop {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
+    .equipos-mavic {
+        @include tarjeta-equipos;
 
+        img {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
 
-    .equipos-matrice img,
-    .equipos-inspire img,
-    .equipos-phantom img,
-    .equipos-matrice-rtk img,
-    .equipos-mavic img {
-        width: 50%;
-    }
-}
+            @include tablet {
+                width: 50%;
+            }
+        }
 
-@media (min-width:1050px) {
-    .equipos h2 {
-        font-size: 2.2rem;
+        div {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+
+            p {
+                text-align: justify;
+                width: 80%;
+
+                @include desktop {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        @include tablet {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
     }
-    .equipos div h3 {
-        font-size: 1.6rem;
-    }
-    .equipos div p {
-        font-size: 1.1rem;
-    }
-    .equipos-matrice img{
-        width: 30%;
-    }
-    .equipos-phantom img{
-        width: 35%;
-    }
-    .equipos-matrice-rtk img{
-        width: 50%;
-        padding: 50px;
-    }
-    .equipos-matrice:hover,
-    .equipos-inspire:hover,
-    .equipos-phantom:hover,
-    .equipos-matrice-rtk:hover,
-    .equipos-mavic:hover {
-    transform: scale(1.01)
+
+    h3 {
+        padding: 15px;
+        font-weight: map-get($map: $font-weights, $key:mediano );
+
+        @include desktop {
+            font-size: 2.5rem;
+            font-weight: map-get($map: $font-weights, $key:grande );
+        }
     }
 
 }

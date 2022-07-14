@@ -1,7 +1,7 @@
 .contenedor-galeria {
     @include flexCenter;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
 
     .header-galeria {
         @include flexCenter;
@@ -9,13 +9,14 @@
         text-align: center;
         color: white;
         padding: 15px;
-        background-color: $color-secundario;
 
         h2 {
+            font-size: 1.5rem;
             color: $color-principal;
+            font-weight: 700;
 
-            @include tablet {
-                font-size: 2.1rem;
+            @include desktop {
+                font-size: 3rem;
             }
         }
     }
@@ -23,17 +24,20 @@
     .galeria {
         @include flexCenter;
         flex-direction: column;
+        padding-top: 20px;
 
         @include tablet {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-            gap: 0px 10px;
+            gap: 20px 20px;
         }
 
-        div {
+        .trabajo {
             width: 100%;
             padding-top: 10px;
+            overflow: hidden;
+            border-radius: 10px;
 
             @include tablet {
                 padding-top: 0;
@@ -43,13 +47,14 @@
             img {
                 width: 100%;
                 border-radius: 15px;
+                transition: 0.5s all ease-in-out;
 
                 @include tablet {
                     width: 100%;
-                    border-radius: 15px;
-
+                    border-radius: 10px;
+                    
                     &:hover {
-                        transform: scale(1.01);
+                        transform: scale(1.2);
                     }
                 }
             }

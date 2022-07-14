@@ -1,5 +1,16 @@
-@mixin flexCenter{
+@mixin flexCenter {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@mixin tarjeta-equipos {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid $color-principal;
 }
