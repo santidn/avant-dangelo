@@ -89,6 +89,11 @@ footer {
   background-color: #393e46;
 }
 
+.botonServicios {
+  color: white;
+  background-color: #0091ca;
+}
+
 .equipos {
   display: flex;
   align-items: center;
