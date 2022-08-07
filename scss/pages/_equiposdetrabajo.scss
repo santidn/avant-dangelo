@@ -23,13 +23,19 @@
                 font-size: 3rem;
             }
         }
+
+        p {
+            @include desktop {
+                font-size: 1.3rem;
+            }
+        }
     }
 
     .equipos-matrice {
         @include tarjeta-equipos;
 
         img {
-            width: 100%;
+            width: 80%;
             padding: 10px;
             border-radius: 20px;
 
@@ -73,7 +79,7 @@
             border-radius: 20px;
 
             @include tablet {
-                width: 50%;
+                width: 60%;
             }
         }
 
@@ -103,7 +109,7 @@
         @include tarjeta-equipos;
 
         img {
-            width: 100%;
+            width: 80%;
             padding: 10px;
             border-radius: 20px;
 
@@ -142,7 +148,7 @@
         @include tarjeta-equipos;
 
         img {
-            width: 50%;
+            width: 80%;
             padding: 10px;
             border-radius: 20px;
 
@@ -151,7 +157,7 @@
             }
 
             @include desktop {
-                width: 50%;
+                width: 45%;
                 padding: 50px;
             }
         }
@@ -189,6 +195,10 @@
             @include tablet {
                 width: 50%;
             }
+
+            @include desktop {
+                width: 40%;
+            }
         }
 
         div {
@@ -215,11 +225,11 @@
 
     h3 {
         padding: 15px;
-        font-weight: map-get($map: $font-weights, $key:mediano );
+        font-weight: map-get($map: $font-weights, $key: mediano);
 
         @include desktop {
             font-size: 2.5rem;
-            font-weight: map-get($map: $font-weights, $key:grande );
+            font-weight: map-get($map: $font-weights, $key: grande);
         }
     }
 
